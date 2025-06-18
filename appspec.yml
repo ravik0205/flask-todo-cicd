@@ -2,13 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/todo_app_project
+    destination: /home/ec2-user/flask-app
 
 hooks:
   AfterInstall:
     - location: scripts/start.sh
       timeout: 300
       runas: ec2-user
+
 
 
 
